@@ -42,6 +42,9 @@
 // ignore shadowed copy constructor
 %ignore ofCubeMap::ofCubeMap(ofCubeMap &&);
 
+// ignore android only functions
+%ignore ofCubeMap::regenerateAllTextures();
+
 %include "gl/ofCubeMap.h"
 
 // ----- ofFbo.h -----
